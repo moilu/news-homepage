@@ -1,11 +1,17 @@
-import './App.css'
+import NavBar from "./components/NavBar";
+import Content from "./components/Content";
+import './App.css';
 
 function App() {
 
   return (
     <>
-      <header>header content</header>
-      <main>main content</main>
+      <header >
+        <NavBar />
+      </header>
+      <main >
+        <Content />
+      </main>
     </>
   )
 }
