@@ -15,7 +15,7 @@ const asideContent = [
     }
 ];
 
-function Hero(params) {
+function Hero() {
     return (
         <section className='flex flex-col md:flex-row md:gap-8 w-full'>
             <div className='pb-10'>
