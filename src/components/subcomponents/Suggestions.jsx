@@ -1,9 +1,11 @@
 
 
-function Suggestions(params) {
+function Suggestions() {
     return (
-        <section>
-            
+        <section className="flex justify-between pt-8">
+            <div>hey</div>
+            <div>hey</div>
+            <div>hey</div>
         </section>
     )
 }
