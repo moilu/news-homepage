@@ -1,11 +1,44 @@
-
+import bitmap1 from '../../assets/Bitmap.png';
+import bitmap2 from '../../assets/Bitmap-2.png';
+import bitmap3 from '../../assets/Bitmap-3.png';
 
 function Suggestions() {
+
+    const articles = [
+        {
+            img: bitmap1,
+            number: '01',
+            title: 'Reviving Retro PCs',
+            abstract: 'What happens when old PCs are given modern upgrades?'
+        },
+        {
+            img: bitmap2,
+            number: '02',
+            title: 'Top 10 Laptops of 2022',
+            abstract: 'Our best picks for various needs and budgets.'
+        },
+        {
+            img: bitmap3,
+            number: '03',
+            title: 'The Growth of Gaming',
+            abstract: 'How the pandemic has sparked fresh opportunities.'
+        },
+    ];    
+
     return (
-        <section className="flex justify-between pt-8">
-            <div>hey</div>
-            <div>hey</div>
-            <div>hey</div>
+        <section className="grid grid-cols-1 gap-4 py-8 md:justify-between flex-column md:flex">
+            {articles.map((article, idx) => (
+            <div className="flex gap-4" key={idx}>
+                <figure>
+                    <img src={article.img} alt="Article image" />
+                </figure>
+                <div className="text-left">
+                    <h3 className='text-2xl font-bold text-gunmetal'>{article.number}</h3>
+                    <h4 className='text-base font-bold'>{article.title}</h4>
+                    <p className='h-auto text-sm text-gunmetal'>{article.abstract}</p>
+                </div>
+            </div>
+            ))}
         </section>
     )
 }
