@@ -3,7 +3,7 @@ import Aside from './Aside';
 
 function Hero() {
     return (
-        <section className='flex flex-col w-full md:flex-row md:gap-8'>
+        <section className='flex flex-col w-full md:flex-row md:gap-6'>
             <div className='pb-6 md:pb-0'>
                 <figure className='pb-5'>
                     <img className='h-[270px] md:h-auto md:w-full w-auto' src={heroImage} alt="Abstract art image" />
