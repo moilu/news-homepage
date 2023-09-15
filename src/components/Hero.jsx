@@ -1,13 +1,13 @@
-import Hero from './subcomponents/Hero';
+import Content from './subcomponents/Content';
 import Suggestions from './subcomponents/Suggestions';
 
-function Content() {
+function Hero() {
     return (
         <>
-            <Hero />
+            <Content />
             <Suggestions />
         </>
     )
 }
 
-export default Content;
+export default Hero;

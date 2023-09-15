@@ -1,5 +1,5 @@
 import NavBar from "./components/NavBar";
-import Content from "./components/Content";
+import Hero from "./components/Hero";
 import './App.css';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <NavBar />
       </header>
       <main >
-        <Content />
+        <Hero />
       </main>
     </>
   )
