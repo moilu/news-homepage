@@ -26,13 +26,13 @@ function Suggestions() {
     ];    
 
     return (
-        <section className="grid grid-cols-1 gap-4 py-8 md:justify-between flex-column md:flex">
+        <section className="grid grid-cols-1 gap-4 py-8 lg:justify-between flex-column lg:flex">
             {articles.map((article, idx) => (
-            <div className="flex gap-4" key={idx}>
-                <figure>
-                    <img src={article.img} alt="Article image" />
+            <div className="flex h-32 gap-3" key={idx}>
+                <figure className='overflow-hidden min-w-fit'>
+                    <img className='h-full' src={article.img} alt="Article image" />
                 </figure>
-                <div className="text-left">
+                <div className="grid text-left align-middle">
                     <h3 className='text-2xl font-bold text-gunmetal'>{article.number}</h3>
                     <h4 className='text-base font-bold'>{article.title}</h4>
                     <p className='h-auto text-sm text-gunmetal'>{article.abstract}</p>

@@ -17,7 +17,7 @@ function Aside() {
 
 
     return (
-        <aside className='grid p-6 text-left bg-darkspaceblue'>
+        <aside className='grid p-6 text-left bg-darkspaceblue lg:min-w-[350px]'>
             <h2 className='text-[#E9AA52] text-3xl font-bold self-center'>New</h2>
             {asideContent.map((content, idx) => (
             <div className='py-4 border-2 rounded-sm border-b-gunmetal last:border-none last:pb-0 first:pt-0' key={idx}>
